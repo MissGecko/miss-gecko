@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIS GECKO OFFICIAL</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- My Style -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Navbar start -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">MIS<span>GECKO</span>.</a>
+
+    <div class="navbar-nav">
+      <a href="#home">Home</a>
+      <a href="#about">Cara Perawatan</a>
+      <a href="#menu">Katalog</a>
+      <a href="#products">Checkout</a>
+      <a href="#contact">Kontak</a>
+    </div>
+
+<!-- Navbar Extra -->
+<div class="navbar-extra">
+  <a href="#" id="search-button"><i data-feather="search"></i></a>
+  <a href="#" id="shopping-cart-button">
+    <i data-feather="shopping-cart"></i>
+    <span class="cart-count">0</span>
+  </a>
+  <a href="#" id="gecko-menu"><i data-feather="menu"></i></a>
+</div>
+
+<!-- Search Form -->
+<div class="search-form">
+  <input type="search" id="search-box" placeholder="Cari produk...">
+  <label for="search-box"><i data-feather="search"></i></label>
+  <div id="search-results" class="search-results"></div>
+</div>
+
+<!-- Shopping Cart -->
+<div class="shopping-cart">
+  <div class="cart-header">
+    <h3>Keranjang Belanja</h3>
+    <a href="#" class="close-cart"><i data-feather="x"></i></a>
+  </div>
+  <div class="cart-items">
+    <!-- Cart items will be dynamically added here -->
+  </div>
+  <div class="cart-total">
+    <p>Total: <span id="cart-total-price">IDR 0</span></p>
+    <button class="btn checkout-btn" id="checkout-button">Checkout via WhatsApp</button>
+  </div>
+</div>
+
+    <!-- Search Form start -->
+    <div class="search-form">
+      <input type="search" id="search-box" placeholder="search here...">
+      <label for="search-box"><i data-feather="search"></i></label>
+    </div>
+    <!-- Search Form end -->
+
+    <!-- Shopping Cart start -->
+    <div class="shopping-cart">
+      <div class="cart-item">
+        <img src="img/products/1.jpg" alt="Product 1">
+        <div class="item-detail">
+          <h3>Product 1</h3>
+          <div class="item-price">IDR 185.000</div>
+        </div>
+        <i data-feather="trash-2" class="remove-item"></i>
+      </div>
+      <div class="cart-item">
+        <img src="img/products/2.jpg" alt="Product 2">
+        <div class="item-detail">
+          <h3>Product 2</h3>
+          <div class="item-price">IDR 105.000</div>
+        </div>
+        <i data-feather="trash-2" class="remove-item"></i>
+      </div>
+      <div class="cart-item">
+        <img src="img/products/3.jpg" alt="Product 3">
+        <div class="item-detail">
+          <h3>Product 1</h3>
+          <div class="item-price">IDR 169.000</div>
+        </div>
+        <i data-feather="trash-2" class="remove-item"></i>
+      </div>
+    </div>
+    <!-- Shopping Cart end -->
+
+  </nav>
+  <!-- Navbar end -->
+
+  <!-- Hero Section start -->
+  <section class="hero" id="home"> </section>
+  <!-- Hero Section end -->
+
+  <!-- About Section start -->
+  <section id="about" class="about">
+    <h2><span>Cara</span> Perawatan</h2>
+  
+    <div class="row">
+      <div class="content">
+        <div class="care-container">
+          <div class="care-card">
+            <h3>🏠 Kandang</h3>
+            <p>Gunakan kotak donat / kotak plastik minimal ukuran 3500ml atau kotak donat isi 6</p>
+          </div>
+  
+          <div class="care-card">
+            <h3>🦗 Pemberian Pakan</h3>
+            <p>Beri makan 4-5 jangkrik setiap 3 hari sekali. Jangan beri makan setiap hari karena sistem pencernaan gecko lambat.</p>
+          </div>
+  
+          <div class="care-card">
+            <h3>💊 Suplemen Kalsium</h3>
+            <p>Berikan minimal 1x seminggu atau setiap pemberian makan.</p>
+            <div class="tips">
+              <strong>Tips Pemberian:</strong>
+              <ul>
+                <li>Tabur pada jangkrik/ulet</li>
+                <li>Taruh sedikit di tutup bekas minuman</li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="care-card">
+            <h3>🧹 Kebersihan</h3>
+            <p>Bersihkan kandang gecko seminggu sekali</p>
+          </div>
+  
+          <div class="care-card">
+            <h3>🛏️ Alas Kandang</h3>
+            <p>Pilihan alas kandang:</p>
+            <ul>
+              <li>Kertas bekas</li>
+              <li>Koran</li>
+              <li>Tisu</li>
+              <li>Dolomit</li>
+            </ul>
+          </div>
+  
+          <div class="care-card">
+            <h3>💧 Air Minum</h3>
+            <p>Selalu sediakan air minum matang di dalam kandang</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+  <section id="menu" class="menu">
+    <h2><span>Katalog</span> Kami</h2>
+
+    <div class="row">
+        <div class="menu-card">
+            <img src="img/menu/1.jpg" alt="SUNGLOW FULL CT" class="menu-card-img">
+            <h3 class="menu-card-title">SUNGLOW FULL CT</h3>
+            <p class="menu-card-price">IDR 500.000</p>
+        </div>
+        <div class="menu-card">
+            <img src="img/menu/2.jpg" alt="WY MACKSNOW ENIGMA" class="menu-card-img">
+            <h3 class="menu-card-title">WY MACKSNOW ENIGMA</h3>
+            <p class="menu-card-price">IDR 1.000.000</p>
+        </div>
+        <div class="menu-card">
+            <img src="img/menu/3.jpg" alt="WY MACKSNOW TREMPER" class="menu-card-img">
+            <h3 class="menu-card-title">WY MACKSNOW TREMPER</h3>
+            <p class="menu-card-price">IDR 800.000</p>
+        </div>
+        <div class="menu-card">
+            <img src="img/menu/4.jpg" alt="SUPER PIED" class="menu-card-img">
+            <h3 class="menu-card-title">SUPER PIED</h3>
+            <p class="menu-card-price">IDR 850.000</p>
+        </div>
+        <div class="menu-card">
+            <img src="img/menu/5.jpg" alt="WY MACKSNOW TREMPER" class="menu-card-img">
+            <h3 class="menu-card-title">WY MACKSNOW TREMPER</h3>
+            <p class="menu-card-price">IDR 235.000</p>
+        </div>
+        <div class="menu-card">
+            <img src="img/menu/6.jpg" alt="MURPHY PATTERNLESS" class="menu-card-img">
+            <h3 class="menu-card-title">MURPHY PATTERNLESS</h3>
+            <p class="menu-card-price">IDR 135.000</p>
+        </div>
+        <div class="menu-card">
+            <img src="img/menu/7.jpg" alt="SUNGLOW" class="menu-card-img">
+            <h3 class="menu-card-title">SUNGLOW</h3>
+            <p class="menu-card-price">IDR 170.000</p>
+        </div>
+        <div class="menu-card">
+            <img src="img/menu/8.jpg" alt="SUNGLOW" class="menu-card-img">
+            <h3 class="menu-card-title">SUNGLOW</h3>
+            <p class="menu-card-price">IDR 150.000</p>
+        </div>
+        <div class="menu-card">
+            <img src="img/menu/9.jpg" alt="SUNGLOW" class="menu-card-img">
+            <h3 class="menu-card-title">SUNGLOW</h3>
+            <p class="menu-card-price">IDR 170.000</p>
+        </div>
+    </div>
+</section>
+
+<!-- Products Section start -->
+<section class="products" id="products">
+  <h2><span>Produk</span> Kami</h2>
+  <div class="row">
+    <div class="product-card" data-id="1">
+      <div class="product-icons">
+        <a href="#" class="add-to-cart-button"><i data-feather="shopping-cart"></i></a>
+        <a href="#" class="item-detail-button" data-modal="modal-1"><i data-feather="eye"></i></a>
+      </div>
+      <div class="product-image">
+        <img src="img/products/1.jpg" alt="Product 1">
+      </div>
+      <div class="product-content">
+        <h3>SUNGLOW FULL CT - MIS 39</h3>
+        <div class="product-stars"></div>
+        <div class="product-price">IDR 500.000 <span>IDR 650.000</span></div>
+      </div>
+    </div>
+    <div class="product-card" data-id="2">
+      <div class="product-icons">
+        <a href="#" class="add-to-cart-button"><i data-feather="shopping-cart"></i></a>
+        <a href="#" class="item-detail-button" data-modal="modal-2"><i data-feather="eye"></i></a>
+      </div>
+      <div class="product-image">
+        <img src="img/products/2.jpg" alt="Product 2">
+      </div>
+      <div class="product-content">
+        <h3>WY MACKSNOW ENIGMA - MIS 51</h3>
+        <div class="product-price">IDR 1.000.000 <span>IDR 1.200.000</span></div>
+      </div>
+    </div>
+    <div class="product-card" data-id="3">
+      <div class="product-icons">
+        <a href="#" class="add-to-cart-button"><i data-feather="shopping-cart"></i></a>
+        <a href="#" class="item-detail-button" data-modal="modal-3"><i data-feather="eye"></i></a>
+      </div>
+      <div class="product-image">
+        <img src="img/products/3.jpg" alt="Product 3">
+      </div>
+      <div class="product-content">
+        <h3>WY MACKSNOW TREMPER - MIS 48</h3>
+        <div class="product-price">IDR 800.000 <span>IDR 1.000.000</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Products Section end -->
+
+  <!-- Contact Section start -->
+  <section id="contact" class="contact">
+    <h2><span>Kontak</span> Kami</h2>
+
+    <div class="row">
+      <iframe src="" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"> </iframe>
+
+<!-- Form section -->
+<form id="contactForm" onsubmit="handleSubmit(event)">
+  <div class="input-group">
+    <i data-feather="user"></i>
+    <input type="text" id="nama" placeholder="Nama" required>
+  </div>
+  <div class="input-group">
+    <i data-feather="mail"></i>
+    <input type="email" id="email" placeholder="Email" required>
+  </div>
+  <div class="input-group">
+    <i data-feather="phone"></i>
+    <input type="tel" id="noHP" placeholder="No HP" required>
+  </div>
+  <button type="submit" class="btn">Kirim Pesan</button>
+</form>
+
+<!-- Modal Konfirmasi -->
+<div id="confirmationModal" class="modal">
+  <div class="modal-container">
+    <a href="#" class="close-icon"><i data-feather="x"></i></a>
+    <div class="modal-content">
+      <h3>Konfirmasi Pesan</h3>
+      <div id="messagePreview" class="message-preview">
+        <!-- Preview pesan akan ditampilkan di sini -->
+      </div>
+      <div class="button-group">
+        <button id="sendButton" class="btn">Kirim via WhatsApp</button>
+        <button id="cancelButton" class="btn btn-cancel">Batal</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </section>
+  <!-- Contact Section end -->
+
+  <!-- Footer start -->
+  <footer>
+    <div class="socials">
+      <a href="https://www.instagram.com/mis.gecko/"><i data-feather="instagram"></i></a>
+      <a href="https://www.tiktok.com/@mis.gecko"><i data-feather="twitter"></i></a>
+      <a href="https://www.facebook.com/share/14Wmodsebc/"><i data-feather="facebook"></i></a>
+      <a href="https://tokopedia.link/daBqnhL12Ob"><i data-feather="shopping-cart"></i></a>
+      <a href="https://id.shp.ee/fYr59iv"><i data-feather="shopping-bag"></i></a>
+    </div>
+
+    <!-- <div> ini buat gunain gambar yang shopee sama tokped
+      <a href="https://www.tokopedia.com/"><img src="img/button_tokopedia.jpg" alt="Tokopedia"/></a>
+      <a href="https://shopee.co.id/"><img src="img/button_shopee.jpg" alt="Shopee"/></a> 
+    </div>
+    -->
+
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#about">Cara Perawatan</a>
+      <a href="#menu">Katalog</a>
+      <a href="#products">Checkout</a>
+      <a href="#contact">Kontak</a>
+    </div>
+
+    <div class="credit">
+      <p>Created by <a href="https://www.tiktok.com/@mis.gecko">MIS GECKO</a>. | &copy; 2024.</p>
+    </div>
+  </footer>
+  <!-- Footer end -->
+
+<!-- Modal Box Item Detail start -->
+<!-- Modal 1 -->
+<div class="modal" id="modal-1">
+  <div class="modal-container">
+    <a href="#" class="close-icon"><i data-feather="x"></i></a>
+    <div class="modal-content">
+      <img src="img/products/1.jpg" alt="SUNGLOW FULL CT">
+      <div class="product-content">
+        <h3>SUNGLOW FULL CT - MIS 39</h3>
+        <p>MORPH : SUNGLOW FULL CT</p>
+        <p>DAM : DREAMSICKLE</p>
+        <p>SIRE : WHITE AND YELLOW RAPTOR</p>
+        <p>DOB : 9/8/2024</p>
+        <p>SEX : FEMALE</p>
+        <div class="product-price">IDR 500.000</div>
+        <button class="buy-now-btn" data-product-id="1">
+          <i data-feather="shopping-cart"></i> <span>Buy Now</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal" id="modal-2">
+  <div class="modal-container">
+    <a href="#" class="close-icon"><i data-feather="x"></i></a>
+    <div class="modal-content">
+      <img src="img/products/2.jpg" alt="WY MACKSNOW ENIGMA">
+      <div class="product-content">
+        <h3>WY MACKSNOW ENIGMA - MIS 51</h3>
+        <p>MORPH : WHITE AND YELLOW MACKSNOW ENIGMA</p>
+        <p>DAM : SUPER SNOW</p>
+        <p>SIRE : ENIGMA</p>
+        <p>DOB : 15/8/2024</p>
+        <p>SEX : MALE</p>
+        <div class="product-price">IDR 1.000.000</div>
+        <button class="buy-now-btn" data-product-id="2">
+          <i data-feather="shopping-cart"></i> <span>Buy Now</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal" id="modal-3">
+  <div class="modal-container">
+    <a href="#" class="close-icon"><i data-feather="x"></i></a>
+    <div class="modal-content">
+      <img src="img/products/3.jpg" alt="WY MACKSNOW TREMPER">
+      <div class="product-content">
+        <h3>WY MACKSNOW TREMPER - MIS 48</h3>
+        <p>MORPH : WHITE AND YELLOW MACKSNOW TREMPER HET ECLIPSE</p>
+        <p>DAM : MACKSNOW</p>
+        <p>SIRE : TREMPER ALBINO</p>
+        <p>DOB : 12/8/2024</p>
+        <p>SEX : FEMALE</p>
+        <div class="product-price">IDR 800.000</div>
+        <button class="buy-now-btn" data-product-id="3">
+        <i data-feather="shopping-cart"></i> <span>Buy Now</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Box Item Detail end -->
+
+
+<!-- Feather Icons -->
+<script>
+  feather.replace()
+</script>
+
+<!-- My Javascript -->
+<script src="js/script.js"></script>
+</body>
+
+</html>
